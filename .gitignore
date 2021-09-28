@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+CRM-HTML-master/README.md
+CRM-HTML-master/CRM-HTML/index.html
+CRM-HTML-master/CRM-HTML/nuevo-cliente.html
+CRM-HTML-master/CRM-HTML/nuevo-pedido.html
+CRM-HTML-master/CRM-HTML/nuevo-producto.html
+CRM-HTML-master/CRM-HTML/pedidos.html
+CRM-HTML-master/CRM-HTML/productos.html
