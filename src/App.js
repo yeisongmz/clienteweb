@@ -9,12 +9,15 @@ import Navegacion from './components/layout/Navegacion';
 
 /**Components */
 import Clientes from './components/clientes/Clientes';
-import Pedidos from './components/pedidos/Pedidos';
-import Productos from './components/productos/Productos';
 import NuevoCliente from './components/clientes/NuevoCliente';
 import EditarCliente from './components/clientes/EditarCliente';
+/* Productos */
+import Productos from './components/productos/Productos';
 import NuevoProducto from './components/productos/NuevoProducto';
 import EditarProducto from './components/productos/EditarProducto';
+/* Pedidos */
+import Pedidos from './components/pedidos/Pedidos';
+import NuevoPedido from './components/pedidos/NuevoPedido';
 
 function App() {
   return (
@@ -35,6 +38,7 @@ function App() {
           <Route exact path="/productos/editar/:id" component={EditarProducto}/>
           
           <Route exact path="/Pedidos" component={Pedidos}/>
+          <Route exact path="/Pedidos/nuevo/:id" component={NuevoPedido}/>
           
         </Switch>
       </main>

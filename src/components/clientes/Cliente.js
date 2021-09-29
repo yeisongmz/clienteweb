@@ -45,9 +45,17 @@ const Cliente = ({cliente, consultarApi}) => {
                         <p>telefono: {telefono}</p>
                     </div>
                     <div className="acciones">
-                        <Link to={`/clientes/editar/${_id}`} style={styles.botonEditar} cliente={cliente} className="btn btn-azul">
+                        <Link to={`/clientes/editar/${_id}`} 
+                                style={styles.botonEditar} 
+                                className="btn btn-azul">
                             <i className="fas fa-pen-alt"></i>
                             Editar Cliente
+                        </Link>
+                        <Link to={`/pedidos/nuevo/${_id}`} 
+                                style={styles.botonPedidoNuevo} 
+                                className="btn btn-amarillo">
+                            <i className="fas fa-plus"></i>
+                            Nuevo Pedido
                         </Link>
                         <button 
                             type="button" 
@@ -72,6 +80,9 @@ const styles = {
     },
     botonEliminar: {
         backgroundColor: 'pink'
+    },
+    botonPedidoNuevo: {
+        backgroundColor: 'orange'
     }
     
 }
