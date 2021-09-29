@@ -13,6 +13,8 @@ import Pedidos from './components/pedidos/Pedidos';
 import Productos from './components/productos/Productos';
 import NuevoCliente from './components/clientes/NuevoCliente';
 import EditarCliente from './components/clientes/EditarCliente';
+import NuevoProducto from './components/productos/NuevoProducto';
+import EditarProducto from './components/productos/EditarProducto';
 
 function App() {
   return (
@@ -25,10 +27,12 @@ function App() {
       <main className="caja-contenido col-9">
         <Switch>
           <Route exact path="/" component={Clientes}/>
-          <Route exact path="/cliente/nuevo" component={NuevoCliente}/>
+          <Route exact path="/clientes/nuevo" component={NuevoCliente}/>
           <Route exact path="/clientes/editar/:id" component={EditarCliente}/>
 
-          <Route exact path="/Productos" component={Productos}/>
+          <Route exact path="/productos" component={Productos}/>
+          <Route exact path="/productos/nuevo" component={NuevoProducto}/>
+          <Route exact path="/productos/editar/:id" component={EditarProducto}/>
           
           <Route exact path="/Pedidos" component={Pedidos}/>
           
